@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <header>
+    <a href="index.html" class="logo" aria-label="Go to To Do">
+      <span>To-Do</span>
+    </a>
+</header>
+
+  <main>
+    <section class="todo-app">
+        <form class="todo-app__form">
+          <div class="todo-app__input__wrapper">  <button type="submit" class="todo-app__button"><ion-icon name="add-outline"></ion-icon></button>
+          <input type="text" class="todo-app__input" placeholder="Add a task" required aria-label="Add a new task">
+          </div>
+      </form>
+        <ul class="todo-app__list">
+          <!-- List will be added here by JS-->
+        </ul>
+        <section class="todo-app__footer">
+      <span class="todo-app__count" hidden> tasks left</span>
+      <span class="todo-app__completed" hidden>Completed </span>
+      <button class="todo-app__clear-completed" hidden>Clear Completed</button>
+    </section>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script type = "module" src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

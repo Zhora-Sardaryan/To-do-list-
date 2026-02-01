@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#667aff,#64b5f6);
+  overflow: hidden;
+}
+
+.logo{
+  text-align: center;
+  margin-top: 50px;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 30px;
+  font-family: Poppins, sans-serif;
+}
+
+.todo-app__form{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-app__input__wrapper{
+  flex: 1;
+  position: relative;
+  align-items: center;
+  display: flex;
+  padding-left: 10px;
+}
+
+.todo-app__input ion-icon{
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+
+.todo-app__input{
+  width: 100%;
+  padding: 12px 15px 12px 35px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.todo-app__input:focus {
+  border-color: #667aff;
+  box-shadow: 0 0 5px rgba(102, 122, 255, 0.3);
+}
+
+.todo-app__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 18px;
+  top: 34%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+.todo-app__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.todo-app__list {
+  list-style: none;
+  margin-bottom: 10px;
+  max-height: 300px;
+}
+
+.todo-app__item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  margin-bottom: 10px;
+}
+
+
+
+.todo-app__delete {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  color: #49433f88;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.todo-app__delete ion-icon {
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.todo-app__delete .icon-check {
+  display: none;
+  color: #49433f88;
+}
+
+.todo-app__delete:hover .icon-circle {
+  display: none;
+}
+
+.todo-app__delete:hover .icon-check {
+   display: inline;
+}
+
+
+.pressed {
+  background-color: #3c3c3cb0;
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.pressed .icon-check {
+  color: #ffffff;
+}
