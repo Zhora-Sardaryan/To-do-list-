@@ -11,7 +11,7 @@ todoForm.addEventListener('submit', function(e){ e.preventDefault();
     listItem.className = "todo-app__item"; 
     const deleteButton = document.createElement("button"); 
     deleteButton.className = "todo-app__delete"; 
-    deleteButton.innerHTML = '<ion-icon class = "icon-circle" name="ellipse-outline"></ion-icon>' + '<ion-icon class = "icon-check" name="checkmark-circle-outline"></ion-icon>'; 
+    deleteButton.innerHTML =  '<ion-icon class="icon-check" name="checkmark-outline"></ion-icon>'; 
 
     const taskSpan = document.createElement('span'); 
     taskSpan.className = 'todo-app__text'; 
